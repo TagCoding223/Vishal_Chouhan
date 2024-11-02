@@ -1,0 +1,309 @@
+/* @media only screen and (width=1440px) { */
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        color: aliceblue;
+    }
+
+    /* header */
+    #body-header {
+        background: #130d38;
+        height: 100%;
+    }
+
+    /* nav bar */
+    .navbar {
+        width: 100vw;
+    }
+
+    .nav li a {
+        color: aliceblue;
+    }
+
+    .nav-item {
+        font-weight: 100;
+        font-size: x-large;
+    }
+
+    /* intro section */
+    #intro {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-top: 5%;
+    }
+
+    .code-icon-con {
+        display: flex;
+        justify-content: center;
+        margin: 4%;
+    }
+
+    #my-name {
+        /* margin-top: 12rem; */
+        /* font-size: 700%; */
+        font-size: 7vw;
+        font-family: "Playfair Display", serif;
+        color: #bdbdbd;
+        margin-bottom: 3%;
+    }
+
+    #intro-summ {
+        width: 31%;
+        /* height: 150px; */
+        margin: 0 auto 7% auto;
+    }
+
+    #summary {
+        font-size: 150%;
+        font-style: oblique;
+        font-family: initial;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .icon-box {
+        width: 5vw;
+        height: 120%;
+        padding: 15% 0 0 1%;
+        margin: auto;
+        color: white;
+        box-shadow: rgb(253 254 255 / 62%) 0px 2px 4px 0px, rgb(240 248 251) 0px 2px 16px 0px;
+        /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+        /* box-shadow: rgba(184, 175, 175, 0.1) 0px 10px 50px; */
+        /* background-color: #45f3ff; */
+        border-radius: 20%;
+    }
+
+    /* about section */
+    #con-about {
+        background-color: #130d38;
+        height: 100%;
+        /* height: 100vh; */
+    }
+
+    .section-heading {
+        text-align: center;
+        font-weight: bold;
+        padding: 6% 0% 1%;
+        font-family: sans-serif;
+        font-size: 300%;
+        /*1 background-color: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: white;
+        text-shadow: rrgb(255 255 255 / 72%) 0px 3px 3px; */
+        text-shadow: 4px 3px 0px rgb(255 255 255 / 26%);
+
+    }
+
+    #about-i-tag {
+        box-shadow: rgb(253 254 255 / 62%) 0px 2px 4px 0px, rgb(240 248 251) 0px 2px 16px 0px;
+        border-radius: 50%;
+    }
+
+    .about-coll-con {
+        margin: 0% 10%;
+    }
+
+    .tag-con-sup {
+        height: 10%;
+        z-index: 1;
+    }
+
+    .tag-con {
+        text-align: center;
+        background: #bdbdbd;
+        width: 14vw;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid red;
+        background-color: #130d38;
+        font-size: 800%;
+    }
+
+    .about-para-div {
+        padding-bottom: 1%;
+        /* background-color: rgb(26 30 40); */
+        font-family: "Playfair Display", serif;
+    }
+
+    .about-para-inner-div {
+        margin: 4%;
+        margin-bottom: 1%;
+        padding: 1% 5% 1% 5%;
+        text-align: center;
+        border: 2px solid whitesmoke;
+    }
+
+    /* skill section */
+    #skills {
+        width: 100vw;
+        height: 100%;
+        /* background: #bdbdbd; */
+    }
+
+    .skill-con {
+        width: 100%;
+        height: 30px;
+        background: whitesmoke;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 3%;
+        border: 2px solid whitesmoke;
+        /* font-family:"Playfair Display", serif; */
+    }
+
+    .lang-per-bar {
+        width: var(--w);
+        /* background: blueviolet; */
+        background: linear-gradient(45deg, #c10c0c, #524848);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .per-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        color: black;
+        /* margin-right: 10%; */
+    }
+
+    /* projects section */
+    #projects {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .card {
+        border: 4px solid whitesmoke;
+    }
+
+    .col-md-4 {
+        width: 36.333333%;
+    }
+
+    .col-md-8 {
+        width: 63.666667%;
+        background: #130d38;
+    }
+
+    .card-col {
+        width: 66.66666667%;
+    }
+
+    .card-body {
+        color: whitesmoke;
+        margin-top: 3%;
+    }
+
+    .pro-img {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* education section */
+    #education {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .ed-con {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        color: gray;
+        font-weight: bold;
+        padding-bottom: 2%;
+    }
+
+    .ed-con a {
+        text-decoration: none;
+        color: cadetblue;
+    }
+
+
+    /* contact section */
+    #contact {
+        width: 100vw;
+        height: 100%;
+        padding-bottom: 2.5%;
+
+    }
+
+    .inp {
+        color: whitesmoke;
+        display: block;
+        width: 70%;
+        margin-bottom: 5%;
+        background: inherit;
+        border: 0px solid transparent;
+        border-bottom: 1px solid snow;
+        padding: .5% 1%;
+    }
+
+    .inp:focus {
+        outline: none;
+    }
+
+    .bg-btn {
+        border-radius: 0;
+    }
+
+    .bg-transparent:hover {
+        background: whitesmoke !important;
+        color: black;
+    }
+
+    .my-details {
+        margin: 0% 7% 7%;
+    }
+
+    .my-details p {
+        /* font-size: smaller; */
+        padding-left: 3%;
+    }
+
+    .my-details p span {
+        display: inline-block;
+        width: 4%;
+    }
+
+    .col-sm-6 {
+        margin: 3% 0% 6% 0%;
+    }
+
+    .my-details-g {
+        padding-bottom: 3%;
+    }
+/* } */

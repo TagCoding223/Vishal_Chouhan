@@ -1,0 +1,141 @@
+/* @media only screen and (width=240px) { */
+@media only screen and (min-width:240px) and (max-width:359px){
+
+    /* navbar */
+    .navbar {
+        width: 100vw;
+    }
+
+    .navbar a {
+        color: aliceblue;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #my-name {
+        font-size: 200%;
+    }
+
+    .code-icon-con {
+        font-size: 10px;
+        padding-top: 35px;
+    }
+
+    #intro-summ {
+        width: auto;
+        margin: 0;
+    }
+
+    #summary {
+        font-size: 100%;
+    }
+
+    .m-4 {
+        margin: 0 !important;
+    }
+
+    .icon-box {
+        width: fit-content;
+        height: auto;
+        padding: 15% 20% 15%;
+        font-size: 50%;
+    }
+
+    .section-heading {
+        font-size: 150%;
+    }
+
+    .about-coll-con {
+        margin: 0;
+    }
+
+    .tag-con {
+        width: 50px;
+        height: 50px;
+        font-size: 200%;
+    }
+
+    .about-para-inner-div {
+        margin: 1%;
+        padding: 1% 3% 1%;
+        font-size: 12px;
+    }
+
+    .col-8 {
+        margin: 0;
+    }
+
+    .skill-con {
+        width: 90vw;
+    }
+
+    .col-8 p {
+        font-size: 12px;
+        width: 150%;
+    }
+
+    .card-con {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+    .card-con .w-50{
+        width: 100dvw !important;
+    }
+    .card-col{
+        width: 90vw;
+        /* margin: 0 1vw !important; */
+    }
+
+    .pro-img{
+        height: 100%;
+    }
+
+    .row-cols-1{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .card-title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+
+    .ed-con{
+        width: 100%;
+    }
+    .ed-con p{
+        font-size: 12px;
+    }
+    .ed-con h4{
+        font-size: 16px;
+    }
+
+    .col-sm-6{
+        padding: 0 !important;
+    }
+
+    .my-details h5{
+        font-size: 18px;
+    }
+
+    .my-details p{
+        font-size: 12px;
+    }
+
+    .my-details p span{
+        width: 5%;
+    }
+
+    .btn{
+        /* padding: 0 !important; */
+        font-size: small;
+    }
+}

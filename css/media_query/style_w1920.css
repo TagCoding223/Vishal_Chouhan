@@ -1,0 +1,102 @@
+/* @media only screen and (min-width: 1051px) and (max-width: 1930px) { */
+@media only screen and (min-width: 1051px) {
+
+    /* navbar */
+    nav {
+        height: 12%;
+    }
+
+    .nav-item {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    /* intro */
+    #intro {
+        padding-top: 8%;
+    }
+
+    .code-icon-con {
+        font-size: 200%;
+    }
+
+    #my-name {
+        font-size: 10.5rem;
+    }
+
+    #intro-summ {
+        width: 80%;
+        height: auto;
+    }
+
+    #summary {
+        font-size: 2.5rem;
+    }
+
+    /* about */
+    /* #con-about {
+        padding-top: 5rem;
+    } */
+
+    .section-heading {
+        font-size: 4rem;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+
+    .about-para-inner-div {
+        margin: 2rem 0 0;
+        font-size: 1.5rem;
+        border: .2rem solid whitesmoke;
+    }
+
+    /* skill section */
+    /* #skills {
+        padding-top: 5rem;
+    } */
+    .skill-con{
+        height: 2.5rem;
+        font-size: 1.5rem;
+        border: none;
+    }
+    #skills p{
+        font-size: 1.5rem;
+    }
+    /* project */
+    .card-con{
+        padding-top: 4rem;
+    }
+    .card{
+        margin-bottom: 4rem !important;
+        width: 86.66666667% !important;
+    }
+    .card-title{
+        font-size: 2.25rem;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+
+    /* education */
+    .ed-con h4{
+        font-size: 2.5rem;
+    }
+    hr{
+        border: .3rem solid;
+        margin-bottom: 2rem;
+    }
+    .ed-con p{
+        font-size: 1.3rem;
+    }
+
+    /* contact */
+    footer{
+        margin-bottom: 7rem;
+    }
+    .inp{
+        border-bottom: solid snow;
+    }
+}
