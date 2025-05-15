@@ -1,341 +1,269 @@
-<!-- version 1.1 (offline) -->
-<!-- navbar fixed -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- when below two line not use then same design display in mobile and pc both (meta charset and viewport line) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal Chouhan</title>
+    <title>Vishal Chouhan | Full Stack Developer</title>
     <link rel="icon" href="./user_src/icon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./plugins/fontawsome/all.css"> <!-- fontawsome -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media_query/style_w600.css">
-    <link rel="stylesheet" href="./css/media_query/style_w360.css">
-    <link rel="stylesheet" href="./css/media_query/style_w240.css">
-    <!-- <link rel="stylesheet" href="./css/media_query/style_w1920.css"> -->
-    
-    <!-- <link rel="stylesheet" href="./css/media_query/style_h600.css"> -->
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></script>
 </head>
-
-<body style="background: #130d38;">
-    <header id="body-header">
-        <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg justify-content-end shadow-lg fixed-top"
-            style="background: rgb(21 50 78) !important;">
-            <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropDown"
-                aria-controls="navbarDropDown" aria-expanded="false" aria-label="Toggler navigation"
-                style="color: #cdc4c4;">
-                <span class="fa fa-bars"></span>
+<body class="bg-gradient-to-br from-indigo-950 to-blue-900 text-gray-100 min-h-screen">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-indigo-900/90 shadow z-50">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+            <div class="flex items-center gap-3">
+                <span class="fa fa-code text-3xl text-indigo-400"></span>
+                <span class="font-bold text-2xl tracking-wide">Vishal Chouhan</span>
+            </div>
+            <ul class="hidden md:flex gap-8 font-medium">
+                <li><a href="#home" class="hover:text-indigo-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-indigo-400 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-indigo-400 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-indigo-400 transition">Projects</a></li>
+                <li><a href="#education" class="hover:text-indigo-400 transition">Education</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400 transition">Contact</a></li>
+            </ul>
+            <button id="nav-toggle" class="md:hidden text-gray-200 focus:outline-none">
+                <span class="fa fa-bars text-2xl"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarDropDown">
-                <ul class="nav-bar nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#body-header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#con-about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
-
-        <!-- header main section -->
-        <section id="intro">
-            <div class="code-icon-con">
-                <span class="fa fa-code fa-4x"></span>
-            </div>
-            <div class="container text-center pb-4">
-                <h1 id="my-name">Vishal Chouhan</h1>
-                <div id="intro-summ">
-                    <p id="summary">I'm driven by a passion for technology and continuous learning. Explore my work to
-                        see how I can contribute to your next project.</p>
-                </div>
-                <div class="icon m-4">
-                    <a href="mailto:codespacev.c22.3@gmail.com">
-                        <div class="icon-box"><i class="fab fa-google fa-3x"></i></div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/vishal-chouhan-vc223">
-                        <div class="icon-box"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                    </a>
-                    <a href="https://github.com/TagCoding223">
-                        <div class="icon-box"><i class="fab fa-github fa-3x"></i></div>
-                    </a>
-                </div>
-            </div>
-        </section>
+        <ul id="nav-mobile" class="md:hidden hidden flex-col gap-4 px-6 pb-4 bg-indigo-900">
+            <li><a href="#home" class="block py-2 hover:text-indigo-400">Home</a></li>
+            <li><a href="#about" class="block py-2 hover:text-indigo-400">About</a></li>
+            <li><a href="#skills" class="block py-2 hover:text-indigo-400">Skills</a></li>
+            <li><a href="#projects" class="block py-2 hover:text-indigo-400">Projects</a></li>
+            <li><a href="#education" class="block py-2 hover:text-indigo-400">Education</a></li>
+            <li><a href="#contact" class="block py-2 hover:text-indigo-400">Contact</a></li>
+        </ul>
     </header>
-
-    <main style="background: #130d38;">
-        <!-- about section -->
-        <section id="con-about">
-            <h2 class="section-heading"><span id="about-i-tag"><i class="fa fa-info-circle"></i></span> About</h2>
-            <div class="about-coll-con d-flex flex-column align-items-center">
-                <div class="tag-con-sup">
-                    <div class="tag-con">
-                        <span class="fa fa-tags"></span>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-36 pb-20 flex flex-col items-center justify-center text-center">
+        <img src="./user_src/icon.png" alt="Vishal Chouhan" class="w-32 h-32 rounded-full shadow-lg mb-6 border-4 border-indigo-500 animate-fade-in">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Vishal Chouhan</h1>
+        <h2 class="text-xl md:text-2xl font-medium text-indigo-300 mb-4">Full Stack Developer & Tech Enthusiast</h2>
+        <p class="max-w-2xl text-lg md:text-xl text-gray-300 mb-6 px-4">I build robust, scalable web solutions and love turning ideas into reality. Let's collaborate to create impactful digital experiences.</p>
+        <div class="flex gap-6 mt-2 justify-center">
+            <a href="mailto:codespacev.c22.3@gmail.com" class="hover:text-red-400 transition"><i class="fab fa-google text-3xl"></i></a>
+            <a href="https://www.linkedin.com/in/vishal-chouhan-vc223" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in text-3xl"></i></a>
+            <a href="https://github.com/TagCoding223" class="hover:text-gray-400 transition"><i class="fab fa-github text-3xl"></i></a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="min-h-screen max-w-4xl mx-auto py-16 px-4 flex flex-col justify-center">
+        <h2 class="text-3xl font-bold flex items-center gap-2 mb-6"><i class="fa fa-info-circle text-indigo-400"></i> About Me</h2>
+        <div class="bg-indigo-800/60 rounded-xl shadow p-8 flex flex-col items-center">
+            <blockquote class="italic text-lg text-center text-gray-200">
+                <span class="fa fa-quote-left text-indigo-400 text-2xl align-top"></span>
+                <br>
+                Hi! I'm Vishal, a passionate full-stack developer with a strong foundation in both frontend and backend technologies. I thrive on solving complex problems and continuously expanding my skill set. My journey includes building static and dynamic websites, REST APIs, and authentication portals using languages like Java, JavaScript, HTML, CSS, and PHP. Currently, I'm pursuing a BCA at Holkar Science College, Indore. I value consistency, creativity, and teamwork, and I'm always eager to take on new challenges.
+                <br>
+                <span class="fa fa-quote-right text-indigo-400 text-2xl align-bottom"></span>
+            </blockquote>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="min-h-screen max-w-5xl mx-auto py-16 px-4 flex flex-col justify-center">
+        <h2 class="text-3xl font-bold flex items-center gap-2 mb-8"><i class="fa fa-chalkboard-teacher text-indigo-400"></i> Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <div class="mb-5">
+                    <div class="flex justify-between mb-1"><span>Java</span><span>Proficient</span></div>
+                    <div class="w-full bg-indigo-900 rounded-full h-3">
+                        <div class="bg-indigo-400 h-3 rounded-full animate-skill-bar" style="width:70%"></div>
                     </div>
                 </div>
-
-                <div class="about-para-div">
-                    <div class="about-para-inner-div">
-                        <p class="m-0"><span class="fa fa-quote-left fa-3x"></span><br>Hi, I'm Vishal Chouhan a
-                            full-stack developer. I have always had a keen interest in computing, so I learned to code
-                            in different languages like C, Java, Kotlin, JavaScript, Html, Css, AngularJs, Php and
-                            Python, etc. , and completed projects in these languages. I have made projects like Static
-                            Sites, Dynamic Sites, Api's , and Login & Signup Portal's and many more. Currently i'm
-                            pursuing in BCA 3rd Year from Holkar Science College, Indore. I'm completely a fresher but
-                            my knowledge, project and spending a huge time to learn in it fields give me wider range of
-                            experience in Development area and i knew how to utilize this experience to make Development
-                            more efficient and effective. Now, talking about my hobbies, I like playing Board Game
-                            &lpar;like chess, ludo&rpar; and Cricket. I love listening songs and learning new
-                            technologies. Last but not least I'm very consistent, punctual, and enthusiastic about my
-                            work. <br>Thank you! Have a good day ahead!<br><span class="fa fa-quote-right fa-3x"></span>
-                        </p>
+                <div class="mb-5">
+                    <div class="flex justify-between mb-1"><span>HTML / CSS</span><span>Advanced</span></div>
+                    <div class="w-full bg-indigo-900 rounded-full h-3">
+                        <div class="bg-indigo-400 h-3 rounded-full animate-skill-bar" style="width:85%"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="skills">
-            <h2 class="section-heading"><span><i class="fa fa-chalkboard-teacher"></i></span> Skills</h2>
-            <div class="container col-8">
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">C</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">C++</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">HTML</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">CSS</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">JavaScript</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">AngularJs</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">Bootstrap</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">SQL/Mongodb</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <div class="skill-con">
-                    <div class="lang-per-bar" style="--w:50%;">Java/Kotlin</div>
-                    <div class="per-box">50%</div>
-                </div>
-                <p
-                    style="font-family: 'Playfair Display', serif;font-style: oblique;text-decoration: overline;text-transform: capitalize;">
-                    &ast;Each Developer Just Learn the programming concepts and the basic syntax of programming
-                    languages.</p>
-            </div>
-        </section>
-        <section id="projects">
-            <h2 class="section-heading"><span><i class="fa fa-th-list"></i></span> Projects</h2>
-            <div class="card-con container w-100 d-flex flex-row flex-wrap px-5">
-                <div class="w-50 h-50">
-                    <div class="card card-col m-auto mb-4">
-                        <div class="row g-0 row-w600">
-                            <div class="col-md-4">
-                                <img class="pro-img" src="./user_src/school_site.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">School Site</h5>
-                                    <p class="card-text">This is my first multiple page static website that are
-                                        completely design for a School.</p>
-                                    <a href="https://github.com/TagCoding223/school-site-first-site">
-                                    <button class="btn btn-primary btn-sm">View Code</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-50 h-50">
-                    <div class="card card-col m-auto mb-4">
-                        <div class="row g-0 row-w600">
-                            <div class="col-md-4">
-                                <img class="pro-img" src="./user_src/imagepicker.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">ImagePicker</h5>
-                                    <p class="card-text">ImagePicker is a image distibution website with different
-                                        categories of images.</p>
-                                    <a href="https://github.com/TagCoding223/ImagePicker">
-                                    <button class="btn btn-primary btn-sm">View Code</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-50 h-50">
-                    <div class="card card-col m-auto mb-4">
-                        <div class="row g-0 row-w600">
-                            <div class="col-md-4">
-                                <img class="pro-img" src="./user_src/login_signup.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Login & Signup Portal</h5>
-                                    <p class="card-text">A login & Signup functionatiy with the help of php,JavaScript
-                                        and mysql database.</p>
-                                        <a href="https://github.com/TagCoding223/user_auth_web">
-                                    <button class="btn btn-primary btn-sm">View Code</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-50 h-50">
-                    <div class="card card-col m-auto mb-4">
-                        <div class="row g-0 row-w600">
-                            <div class="col-md-4">
-                                <img class="pro-img" src="./user_src/vapi.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Vapi - A News RestApi</h5>
-                                    <p class="card-text">A Rest Api create in node js and use Mongodb as a database to
-                                        create different format of response.</p>
-                                        <a href="https://github.com/TagCoding223/vapi_mongodb">
-                                    <button class="btn btn-primary btn-sm">View Code</button></a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="mb-5">
+                    <div class="flex justify-between mb-1"><span>JavaScript</span><span>Advanced</span></div>
+                    <div class="w-full bg-indigo-900 rounded-full h-3">
+                        <div class="bg-indigo-400 h-3 rounded-full animate-skill-bar" style="width:80%"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="education">
-            <h2 class="section-heading"><span><i class="fa fa-graduation-cap"></i></span> Education</h2>
-            <div class="row row-cols-1 row-cols-md-2 mx-4 px-4 justify-content-center mt-3">
-                <div class="col">
-                    <div class="ed-con">
-                        <h4><a href="https://collegeholkar.org">Govt. Holkar Science College, Indore
-                                &lpar;GHSC&rpar;</a></h4>
-                        <hr>
-                        <p><strong>Aug 2022 - Current</strong></p>
-                        <p>I'm Currently pursuing in Bachelor of Computer Application from Govt. Holkar Science College,
-                            Indore. During my time in college, I participated in various tech challenges, which included
-                            both curricular and extracurricular activities.</p>
+            <div>
+                <div class="mb-5">
+                    <div class="flex justify-between mb-1"><span>ReactJs / Bootstrap / Tailwind</span><span>Intermediate</span></div>
+                    <div class="w-full bg-indigo-900 rounded-full h-3">
+                        <div class="bg-indigo-400 h-3 rounded-full animate-skill-bar" style="width:65%"></div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="ed-con">
-                        <h4><a href="https://vaishnavcambridgeschool.co.in">Vaishnav Cambridge Higher Secondary School, Pithampur</a></h4>
-                        <hr>
-                        <p>July 2021 - May 2022</p>
-                        <p>I completed my 12th standerd education at Vaishnav Cambridge Higher Secondary School,
-                            Pithampur. During my time in school, I participated in various fests and organized various
-                            cultural events along with my friends, which included both curricular and extracurricular
-                            activities.</p>
+                <div class="mb-5">
+                    <div class="flex justify-between mb-1"><span>Spring Boot / NextJs</span><span>Intermediate</span></div>
+                    <div class="w-full bg-indigo-900 rounded-full h-3">
+                        <div class="bg-indigo-400 h-3 rounded-full animate-skill-bar" style="width:60%"></div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="ed-con">
-                        <h4><a href="https://vaishnavcambridgeschool.co.in">Vaishnav Cambridge Higher Secondary School, Pithampur</a></h4>
-                        <hr>
-                        <p>July 2019 - May 2020</p>
-                        <p>I completed my 10th standard education at Vaishnav Cambridge Higher Secondary School,
-                            Pithampur. During my time in school, I participated in various fests and cultural events
-                            along with my friends, which included both curricular and extracurricular activities.</p>
+                <div class="mb-5">
+                    <div class="flex justify-between mb-1"><span>SQL / MongoDB</span><span>Intermediate</span></div>
+                    <div class="w-full bg-indigo-900 rounded-full h-3">
+                        <div class="bg-indigo-400 h-3 rounded-full animate-skill-bar" style="width:60%"></div>
                     </div>
                 </div>
             </div>
-        </section>
-
-    </main>
-    <footer style="background: #130d38;">
-        <section id="contact">
-            <h2 class="section-heading"><span><i class="fa fa-address-card"></i></span> Contact</h2>
-            <div class="container row m-auto h-75 py-3">
-                <div class="col-sm-6 px-4">
-                    <div class="my-details">
-                        <div class="my-details-g">
-                            <h5><b>Get In Touch!</b></h5>
-                            <p>Hey! Just feel free to contact me. I would love to solve your problems and ready to
-                                contribute in your project.</p>
-                        </div>
-                        <div class="my-details-g">
-                            <h5><b>My Address</b></h5>
-                            <p><span><i class="fa fa-map-marker-alt"></i></span> Indore</p>
-                            <p><span><i class="fa fa-envelope"></i></span> codespacev.c22.3@gmail.com</p>
-                        </div>
+        </div>
+        <p class="mt-8 text-center text-indigo-300 italic">*Always learning, always growing.</p>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="min-h-screen max-w-6xl mx-auto py-16 px-4 flex flex-col justify-center">
+        <h2 class="text-3xl font-bold flex items-center gap-2 mb-8"><i class="fa fa-th-list text-indigo-400"></i> Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6 flex flex-col md:flex-row items-center hover:scale-[1.03] transition-transform">
+                <img class="w-28 h-28 object-cover rounded-lg mb-4 md:mb-0 md:mr-6 border-2 border-indigo-400" src="./user_src/school_site.png" alt="School Site">
+                <div>
+                    <h5 class="text-xl font-semibold mb-2">School Site</h5>
+                    <p class="mb-3 text-gray-300">A multi-page static website designed for a school, focusing on clean UI and accessibility.</p>
+                    <a href="https://github.com/TagCoding223/school-site-first-site" class="inline-block px-4 py-2 bg-indigo-500 rounded text-white hover:bg-indigo-600 transition text-sm">View Code</a>
+                </div>
+            </div>
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6 flex flex-col md:flex-row items-center hover:scale-[1.03] transition-transform">
+                <img class="w-28 h-28 object-cover rounded-lg mb-4 md:mb-0 md:mr-6 border-2 border-indigo-400" src="./user_src/imagepicker.png" alt="ImagePicker">
+                <div>
+                    <h5 class="text-xl font-semibold mb-2">ImagePicker</h5>
+                    <p class="mb-3 text-gray-300">A curated image distribution platform with category-based browsing and modern design.</p>
+                    <a href="https://github.com/TagCoding223/ImagePicker" class="inline-block px-4 py-2 bg-indigo-500 rounded text-white hover:bg-indigo-600 transition text-sm">View Code</a>
+                </div>
+            </div>
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6 flex flex-col md:flex-row items-center hover:scale-[1.03] transition-transform">
+                <img class="w-28 h-28 object-cover rounded-lg mb-4 md:mb-0 md:mr-6 border-2 border-indigo-400" src="./user_src/login_signup.png" alt="Login & Signup Portal">
+                <div>
+                    <h5 class="text-xl font-semibold mb-2">Login & Signup Portal</h5>
+                    <p class="mb-3 text-gray-300">A secure authentication portal using PHP, JavaScript, and MySQL, featuring user-friendly UI.</p>
+                    <a href="https://github.com/TagCoding223/user_auth_web" class="inline-block px-4 py-2 bg-indigo-500 rounded text-white hover:bg-indigo-600 transition text-sm">View Code</a>
+                </div>
+            </div>
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6 flex flex-col md:flex-row items-center hover:scale-[1.03] transition-transform">
+                <img class="w-28 h-28 object-cover rounded-lg mb-4 md:mb-0 md:mr-6 border-2 border-indigo-400" src="./user_src/vapi.png" alt="Vapi - A News RestApi">
+                <div>
+                    <h5 class="text-xl font-semibold mb-2">Vapi - News REST API</h5>
+                    <p class="mb-3 text-gray-300">A RESTful API built with Node.js and MongoDB, delivering news in multiple formats.</p>
+                    <a href="https://github.com/TagCoding223/vapi_mongodb" class="inline-block px-4 py-2 bg-indigo-500 rounded text-white hover:bg-indigo-600 transition text-sm">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="min-h-screen max-w-5xl mx-auto py-16 px-4 flex flex-col justify-center">
+        <h2 class="text-3xl font-bold flex items-center gap-2 mb-8"><i class="fa fa-graduation-cap text-indigo-400"></i> Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6">
+                <h4 class="text-lg font-semibold mb-2"><a href="https://collegeholkar.org" class="hover:text-indigo-400">Govt. Holkar Science College, Indore</a></h4>
+                <hr class="border-indigo-500 mb-2">
+                <p class="text-sm text-indigo-300 mb-1"><strong>Aug 2022 - Present</strong></p>
+                <p class="text-gray-200">Bachelor of Computer Application (BCA). Active participant in tech events and coding challenges.</p>
+            </div>
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6">
+                <h4 class="text-lg font-semibold mb-2"><a href="https://vaishnavcambridgeschool.co.in" class="hover:text-indigo-400">Vaishnav Cambridge Higher Secondary School, Pithampur</a></h4>
+                <hr class="border-indigo-500 mb-2">
+                <p class="text-sm text-indigo-300 mb-1">July 2021 - May 2022</p>
+                <p class="text-gray-200">12th Standard. Engaged in cultural and academic activities.</p>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <div class="bg-indigo-800/60 rounded-xl shadow p-6 w-full md:w-1/2">
+                <h4 class="text-lg font-semibold mb-2"><a href="https://vaishnavcambridgeschool.co.in" class="hover:text-indigo-400">Vaishnav Cambridge Higher Secondary School, Pithampur</a></h4>
+                <hr class="border-indigo-500 mb-2">
+                <p class="text-sm text-indigo-300 mb-1">July 2019 - May 2020</p>
+                <p class="text-gray-200">10th Standard. Participated in fests and school events.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <footer class="bg-indigo-950 py-14">
+        <section id="contact" class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold flex items-center gap-2 mb-8"><i class="fa fa-address-card text-indigo-400"></i> Contact</h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="flex-1">
+                    <h5 class="text-lg font-semibold mb-2">Let's Connect!</h5>
+                    <p class="text-gray-300 mb-4">Have a project in mind or want to collaborate? Reach out and let's build something great together.</p>
+                    <div class="mb-4">
+                        <p class="flex items-center gap-2 text-gray-300"><i class="fa fa-map-marker-alt text-indigo-400"></i> Indore, India</p>
+                        <p class="flex items-center gap-2 text-gray-300"><i class="fa fa-envelope text-indigo-400"></i> codespacev.c22.3@gmail.com</p>
+                    </div>
+                    <div class="flex gap-6 mt-2">
+                        <a href="mailto:codespacev.c22.3@gmail.com" class="hover:text-red-400 transition"><i class="fab fa-google text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-chouhan-vc223" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                        <a href="https://github.com/TagCoding223" class="hover:text-gray-400 transition"><i class="fab fa-github text-2xl"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-6" style="color: gray;">
-                    <div class="d-flex justify-content-center align-items-center flex-column h-100">
-                        <input class="inp" name="username" type="text" placeholder="Your Name" >
-                        <input class="inp" type="text" name="subject" placeholder="Subject" autocomplete="email">
-                        <textarea class="inp" name="message" cols="40" rows="3" placeholder="Your Message"></textarea>
-                        <button class="btn btn-primary btn-lg bg-transparent" id="mailme">Send Message</button>
-                    </div>
-                </div>
-
+                <form class="flex-1 flex flex-col gap-4 bg-indigo-800/60 rounded-xl shadow p-6" autocomplete="off">
+                    <input class="px-4 py-2 rounded bg-indigo-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" name="username" type="text" placeholder="Your Name" required>
+                    <input class="px-4 py-2 rounded bg-indigo-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" type="email" name="email" placeholder="Your Email" required>
+                    <input class="px-4 py-2 rounded bg-indigo-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" type="text" name="subject" placeholder="Subject">
+                    <textarea class="px-4 py-2 rounded bg-indigo-900 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" name="message" rows="3" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="mt-2 px-6 py-2 bg-indigo-500 rounded text-white hover:bg-indigo-600 transition font-semibold">Send Message</button>
+                </form>
             </div>
-            <div class="icon m-4 text-center">
-                <a href="mailto:codespacev.c22.3@gmail.com">
-                    <div class="icon-box"><i class="fab fa-google fa-3x"></i></div>
-                </a>
-                <a href="https://www.linkedin.com/in/vishal-chouhan-vc223">
-                    <div class="icon-box"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                </a>
-                <a href="https://github.com/TagCoding223">
-                    <div class="icon-box"><i class="fab fa-github fa-3x"></i></div>
-                </a>
-            </div>
+            <p class="mt-10 text-center text-gray-400 text-sm">&copy; 2025 Vishal Chouhan. All rights reserved.</p>
         </section>
     </footer>
-
-    <!-- <script src="./plugins/typed.js@2.0.12.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./plugins/fontawsome/all.js"></script>
-    <script src="./js/script.js"></script>
-    <!-- <script>
-        var typeData = new Typed(".role", {
-            strings: [
-                "Problem Solver",
-                "Web Developer",
-                "Software Developer",
-                "Android Developer",
-                "FrontEnd Developer",
-                "BackEnd Developer",
-            ],
-            loop: true,
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 2500,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script>
+        // Navbar mobile toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMobile = document.getElementById('nav-mobile');
+        navToggle.addEventListener('click', () => {
+            navMobile.classList.toggle('hidden');
+        });
+        navMobile.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navMobile.classList.add('hidden'));
         });
 
-    </script> -->
+        // Section scroll-in animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedSections = document.querySelectorAll('section[id]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('section-visible');
+                        entry.target.classList.remove('section-hidden');
+                    } else {
+                        entry.target.classList.remove('section-visible');
+                        entry.target.classList.add('section-hidden');
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+            animatedSections.forEach(section => {
+                section.classList.add('section-hidden');
+                observer.observe(section);
+            });
+        });
+    </script>
+    <style>
+        @keyframes fade-in {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-in {
+            animation: fade-in 1.2s cubic-bezier(0.4,0,0.2,1) both;
+        }
+        @keyframes skill-bar {
+            from { width: 0; }
+            to { width: var(--tw-width); }
+        }
+        .animate-skill-bar {
+            animation: skill-bar 1.5s cubic-bezier(0.4,0,0.2,1) both;
+        }
+        /* Section scroll animation */
+        .section-hidden {
+            opacity: 0;
+            transform: translateY(60px) scale(0.98);
+            transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+            pointer-events: none;
+        }
+        .section-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+            pointer-events: auto;
+        }
+    </style>
 </body>
-
 </html>
